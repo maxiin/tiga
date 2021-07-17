@@ -1,0 +1,52 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* max-height: 100%; */
+    /* max-width: 100%; */
+    display: flex;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    /* background-color: #121214; */
+    background: linear-gradient(135deg, #323232 0%, #323232 10%, #121214 20%, #121214 80%, #323232 90%, #323232 100%);
+}
+
+.flg-animation {
+    background: linear-gradient(0deg, #f71238, #fd3aae, #f71238, #fd3aae);
+    background-size: 100% 200%;
+
+    -webkit-animation: GradientAnim 2s ease infinite;
+    -moz-animation: GradientAnim 2s ease infinite;
+    -o-animation: GradientAnim 2s ease infinite;
+    animation: GradientAnim 2s ease infinite;
+}
+
+@-webkit-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-o-keyframes GradientAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
